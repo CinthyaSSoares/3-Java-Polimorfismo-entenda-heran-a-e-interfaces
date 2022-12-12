@@ -1,5 +1,5 @@
 
-public class Funcionario {
+public abstract class Funcionario {//Não pode instanciar "criar" funcionario pois é abstrata
 	
 	private String nome;
 	private String cpf;
@@ -9,10 +9,8 @@ public class Funcionario {
 		
 	}
 	
-	//bonificação
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
+	//bonificação com método abstrato "sem corpo"
+	public abstract double getBonificacao();
 	
 	//Gets e sets
 	public String getNome() {
