@@ -5,9 +5,6 @@ public abstract class Funcionario {//Não pode instanciar "criar" funcionario po
 	private String cpf;
 	private double salario;
 	
-	public Funcionario() {
-		
-	}
 	
 	//bonificação com método abstrato "sem corpo"
 	public abstract double getBonificacao();
