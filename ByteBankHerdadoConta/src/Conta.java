@@ -1,7 +1,7 @@
 
 public abstract class Conta {
 	
-    private double saldo;
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -9,7 +9,7 @@ public abstract class Conta {
         
     public Conta(int agencia, int numero) {
     	Conta.total++;
-    	System.out.println("O toal de contas é " + Conta.total);
+    	System.out.println("O total de contas é " + Conta.total);
     	this.agencia = agencia;
     	this.numero = numero;
     	System.out.println("Criando uma nova conta " + this.numero);
